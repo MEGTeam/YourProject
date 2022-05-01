@@ -12,7 +12,7 @@
 }
 
 .filter-Buttons {
-    margin-top: 50px;
+    margin: 50px 0;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -47,48 +47,6 @@ button.active {
 .cards-con {
     max-width: 1200px;
     width: 100%;
-}
-
-.cards-images-con {
-    padding: 10px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(262px, 1fr));
-    gap: 20px;
-    transition: all 0.3s ease-in-out;
-}
-.card-img {
-    min-height: 270px;
-    position: relative;
-    overflow: hidden;
-    transform: scale(0);
-    transition: all 0.4s ease-in-out;
-    display: block;
-    position: absolute;
-}
-
-.card-img.active {
-    animation: d 0.5s ease-in-out forwards;
-    display: block;
-    position: unset;
-}
-
-.card-img.hide {
-    display: block;
-    position: unset;
-    transform: scale(1);
-    animation: h 0.4s ease-in-out forwards;
-    /* display: none; */
-}
-
-@keyframes d {
-    100% {
-        transform: scale(1);
-    }
-}
-@keyframes h {
-    100% {
-        transform: scale(0);
-    }
 }
 
 .cards-images-con .card-img img {
@@ -165,7 +123,31 @@ button.active {
     pointer-events: none;
 }
 
-.none {
-    position: absolute !important;
+.cards-images-con {
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    transition: all 0.3s ease-in-out;
 }
+
+.card-img {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+    transform: scale(0);
+    width: 0;
+    height: 0;
+}
+
+.card-img.active {
+    height: 270px;
+    width: 262px;
+    transform: scale(1);
+}
+
+.card-img.hide {
+    transform: scale(0);
+}
+
 /* porto END */

@@ -26,13 +26,9 @@ FILTERBUTTONS.forEach((button) => {
                 ) {
                     c.classList.add("active");
                     c.classList.remove("hide");
-                    c.classList.remove("none");
                 } else {
                     c.classList.remove("active");
                     c.classList.add("hide");
-                    setTimeout(() => {
-                        c.classList.add("none");
-                    }, 300);
                 }
             }
         });
@@ -70,15 +66,3 @@ function display4Cards() {
 display4Cards();
 
 addButton.addEventListener("click", display4Cards);
-
-// test
-
-// CARDS.forEach((card) => {
-//     card.addEventListener("click", () => {
-//         card.classList.toggle("active");
-//         card.classList.toggle("hide");
-//         setTimeout(() => {
-//             card.classList.toggle("none");
-//         }, 300);
-//     });
-// });
