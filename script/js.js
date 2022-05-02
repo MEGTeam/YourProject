@@ -6,6 +6,7 @@ IMAGES.forEach((e, i) => {
 });
 
 const FILTERBUTTONS = document.querySelectorAll(".filter-Buttons button");
+let t;
 
 FILTERBUTTONS.forEach((button) => {
     button.addEventListener("click", () => {
@@ -51,7 +52,8 @@ function display4Cards() {
     while (count < 4) {
         let x = CARDS[cardCount];
         displayedCards.push(x);
-        x.classList.add("active");
+        x.classList.remove("hidden");
+        setTimeout(() => x.classList.add("active"), 150);
         cardCount++;
         count++;
     }

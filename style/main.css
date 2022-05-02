@@ -126,7 +126,6 @@ button.active {
 .cards-images-con {
     padding: 10px;
     display: flex;
-    gap: 20px;
     flex-wrap: wrap;
     transition: all 0.3s ease-in-out;
 }
@@ -138,16 +137,34 @@ button.active {
     transform: scale(0);
     width: 0;
     height: 0;
+    transition: all 0.4s 0.4s ease-in-out, width 0.4s ease-in-out,
+        height 0.4s ease-in-out, margin 0.4s ease-in-out;
 }
 
 .card-img.active {
+    position: relative;
+    margin: 10px;
     height: 270px;
     width: 262px;
     transform: scale(1);
 }
 
 .card-img.hide {
+    transition: all 0.4s ease-in-out, width 0.4s 0.4s ease-in-out,
+        height 0.4s 0.4s ease-in-out, margin 0.4s 0.4s ease-in-out;
     transform: scale(0);
+}
+.card-img.hidden {
+    display: none;
+}
+.p-a {
+    position: absolute !important;
+}
+
+@media (max-width: 991px) {
+    .cards-images-con {
+        justify-content: center;
+    }
 }
 
 /* porto END */
