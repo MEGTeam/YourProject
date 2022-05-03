@@ -46,11 +46,11 @@
     font-size: 15px;
     word-spacing: 3px;
 }
-a:link{
+.four-one a:link , .four-two a:link{
     text-decoration: none;
     color: white
 }
-a:hover{
+.four-one a:hover , .four-two a:hover{
     color: #10ff23;
 }
 /* ENG Eman */
