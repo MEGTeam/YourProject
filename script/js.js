@@ -1,8 +1,10 @@
 // set img src
-const IMAGES = document.querySelectorAll(".card-img img");
+const IMAGES = document.querySelectorAll(
+    ".center-items .cards-con .card-img img"
+);
 
 IMAGES.forEach((e, i) => {
-    e.setAttribute("src", `../images/project-${i + 1}.jpg`);
+    e.setAttribute("src", `../images/Project-${i + 1}.jpg`);
 });
 
 const FILTERBUTTONS = document.querySelectorAll(".filter-Buttons button");
