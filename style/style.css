@@ -156,5 +156,18 @@ body{
     margin-right: 1%;
 }
 .megteam-heading{
-    color:  rgb(5, 5, 5) !important;
+    color: rgb(101,54, 16) ;
+}
+.logo a:hover{
+    background-color: rgba(255, 253, 213, 0.643);
+    color: rgb(94,77,0) ;
+    font-family:'Courier New', Courier, monospace;
+    padding-right: 3%;
+    padding-top: 0.8%;
+    padding-left: 1%;
+    border-radius: 10px;
+    font-size: 30px;
+}
+body{
+    background-color:rgba(255, 253, 213);
 }
