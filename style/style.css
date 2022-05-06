@@ -266,6 +266,7 @@ body{
     top: 0;
     left: 0;
     background-color: aliceblue;
+    display: none;
 }
 .new-ul{
     display: grid !important;
