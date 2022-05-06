@@ -242,18 +242,18 @@ body{
     top:14px;
     height: 1px ;
 }
-.menu-icon:hover span:nth-child(2){
+.menu-icon.active span:nth-child(2){
     opacity: 0;
 }
-.menu-icon:hover span:last-child,.menu-icon:hover span:first-child{
+.menu-icon.active span:last-child,.menu-icon.active span:first-child{
     top:8px !important;
 }
-.menu-icon:hover span:first-child{
+.menu-icon.active span:first-child{
     transform: rotate(45deg);
     height: 4px;
     background-color: black;
 }
-.menu-icon:hover span:last-child{
+.menu-icon.active span:last-child{
     transform:rotate(-45deg);
     height: 4px;
     background-color: black;
@@ -267,6 +267,9 @@ body{
     left: 0;
     background-color: aliceblue;
     display: none;
+}
+.white.active{
+    display: block;
 }
 .new-ul{
     display: grid !important;
@@ -291,6 +294,11 @@ body{
     position: relative;
         display: none;
 }
+
+.new-ul li.active{
+    display: block;
+}
+
 .new-ul li a{
     color: #000000;
     font-size: 14px;
