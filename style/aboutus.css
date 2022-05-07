@@ -2,10 +2,12 @@
     margin: 0%;
     padding: 0%;
 }
-
+.section-aboutus{
+    padding-bottom: 50px;
+}
 .svg-1{
-   height: 24px;
-   color: #8c8f94;
+    height: 24px;
+    color: #8c8f94;
 }
 
 .megteam-span{
