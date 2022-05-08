@@ -30,7 +30,7 @@ header ul li{
     width:fit-content; 
     font-size: 17px;
 }
-header ul li :hover ,.home{
+header ul li :hover ,a.active{
     color: #6fc754;
     transition: all 0.4s ;
 }
