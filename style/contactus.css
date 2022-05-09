@@ -57,206 +57,109 @@ body{
 .four-one-p2 a:hover {
     color: #10ff23;
 }
-/* ENG Eman */
-/* start */
-@media(max-width: 1400px) {
-    *{
-        padding: 0%;
-        margin: 0%;
-    
-    }
-    form{
-    width: 100%;
-    text-align: left;
-    margin-left: 20vw;
-    }
-    input[type="text"] {
-        background-color: white;
-        padding: 12px 50px;
-        border: 1px #ddd solid;
-        font-size: 18px;
-        border-radius: 20px;
-    }
-    input[type="email"] {
-       padding: 12px 50px;
-        border: 1px #ddd solid;
-        font-size: 18px;
-        border-radius: 20px;
-    }
-    .con{
-        position: relative;
-    }
-    .name{
-        display: flex;
-        position: absolute;
-        bottom: -1vw;
-    
-    }
-    .email{
-        display: flex;
-        position: absolute;
-        left:27vw ;
-        top: -.5vw;
-    }
-    h4{
-        font-weight: lighter;
-    }
-    input[type="email"]:hover {
-    background: #eee;
-    }
-    input[type="text"]:hover {
-        background: #eee;
-        }
-        input[type="submit"] {
-            background-color: white;
-            padding: 12px 50px;
-            border: 1px #ddd solid;
-            font-size: 18px;
-            border-radius: 20px;
-            position: relative;
-            bottom: -100px;
-        }
-         .Message{
-           width: 555px;
-           height: 120px;
-        }
-        input[type="submit"] {
-            background-color:  rgba(80, 202, 80, 0.833);
-            border: 1px #ddd solid;
-            font-size: 18px;
-            border-radius: 20px;
-            color: white;
-            text-align: center;
-        }
-        .contact{
-            width: 200px; 
-            position: absolute;
-            left: 200px;
-            cursor:pointer;
-        }
-        .contact:hover{
-            background: black;
-        }
-        .Message:focus{
-            outline: none;
-        }
-        input[type="submit"],input[type="email"],input[type="text"]:focus{
-            outline: none;
-        }
-        .sub{
-            width: 555px;
-            height: 30px;
-        }
-    }
-    @media(max-width: 200px) {
-        form{
-        margin-left: 5px;
-        }
-        input[type="text"] {
-            padding: 2px 5px;
-            border: .2px #ddd solid;
-            font-size: 12px;
-            border-radius: 5px;
-        }
-        input[type="email"] {
-            padding: 2px 5px;
-             border: .2px #ddd solid;
-             font-size: 12px;
-             border-radius: 5px;
-         }
-         .name{
-            align-content: flex-start;
-            position: relative;
-            left: 2px;
-            bottom: -30px;
-            font-size: 10px; 
-         }
-         input[type="submit"] {
-            padding: 5px 10px;
-            border: .2px #ddd solid;
-            font-size: 12px;
-            border-radius: 2px;
-            position: relative;
-            bottom: -10px;
-        }
-        .Message{
-            width: 120px;
-            height: 20px;
-            font-size: 10px;
-            position: relative;
-             top: -15px;
-         }
-         .email{
-             position: relative;
-             left: 5px;
-         top: 40px;
-         font-size: 10px;
-         }
-         .text-sub{
-            font-size: 10px;
-         }
-         .mess{
-            font-size: 10px;  
-         }
-         input[type="submit"] {
-             border: .2px #ddd solid;
-             font-size: 12px;
-             border-radius: 2px;
-         }
-         .contact{
-             width: 80px; 
-             position: absolute;
-             left: 20px;
-         }
-         .sub{
-             width: 120px;
-             height: 14px;
-             position: relative;
-             top: -15px;
-         }
-    }
-    @media(min-width: 200px) and (max-width:850px){
-        input[type="email"] {
-             position:relative ;
-             bottom: -45px;
-         }
-         .email{
-            position:relative ;
-             top: 100px;
-             left: 20px;
-        }
-         .text-sub{
-            position:relative ;
-            bottom: -40px;
-         }
-         .sub{
-            position: relative;
-            top: 30px;
-            width: 350px;
-        }
-        .mess{
-            position:relative ;
-             bottom: -30px;
-         }
-         .Message{
-            position: relative;
-             top: 20px;
-             width: 350px;
-         }
-    }
-    /* end */
 .four-two{
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: flex-start;
     margin-top: 75px;
 }
-.four-two-div2{
-    width: 40%
+.four-two-div1{
+    width: fit-content;
+    text-align: left;
+    margin-left: 120px;
 }
-h4{
+h2{
+    font-weight:bold;
+    margin-bottom: 50px;
+    font-size: 19px
+}
+input[type="text"] {
+    background-color: white;
+    padding: 12px 50px;
+    border: 1px #ddd solid;
+    font-size: 18px;
+    border-radius: 20px;
+}
+input[type="email"] {
+    padding: 12px 50px;
+    border: 1px #ddd solid;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.con{
+    position: relative;
+}
+.name{
+    display: flex;
+    position: absolute;
+    bottom: -1vw;
+
+}
+.email{
+    display: flex;
+    position: absolute;
+    left:27vw ;
+    top: -.5vw;
+}
+.four-two-div1 h4{
+    font-weight: normal;
+    font-size: 19px;
+}
+input[type="email"]:hover {
+    background: #eee;
+}
+input[type="text"]:hover {
+    background: #eee;
+}
+input[type="submit"] {
+    background-color: white;
+    padding: 12px 50px;
+    border: 1px #ddd solid;
+    font-size: 18px;
+    border-radius: 20px;
+    position: relative;
+    top: 100px;
+    margin-bottom: 110px ;
+}
+.Message{
+    width: 555px;
+    height: 120px;
+}
+input[type="submit"] {
+    background-color:  rgba(80, 202, 80, 0.833);
+    border: 1px #ddd solid;
+    font-size: 18px;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+}
+.contact{
+    width: 200px; 
+    position: absolute;
+    left: 200px;
+    cursor:pointer;
+}
+.contact:hover{
+    background: black;
+}
+.Message:focus{
+    outline: none;
+}
+input[type="submit"],input[type="email"],input[type="text"]:focus{
+    outline: none;
+}
+.sub{
+    width: 555px;
+    height: 30px;
+}
+.four-two-div2{
+    width: fit-content;
+    margin-left: 50px;
+}
+.four-two-div2 h4{
     text-transform: uppercase;
     font-size: 19px;
+    margin-bottom: 50px;
 }
 .two-span1 ,.two-span2 ,.two-span3 ,.two-span4{
     font-size: 14px;
@@ -280,4 +183,108 @@ h5{
 }
 .four-two iframe{
     margin-top: 50px;
+}
+
+@media(max-width: 200px) {
+    form{
+        margin-left: 5px;
+    }
+    input[type="text"] {
+        padding: 2px 5px;
+        border: .2px #ddd solid;
+        font-size: 12px;
+        border-radius: 5px;
+    }
+    input[type="email"] {
+        padding: 2px 5px;
+        border: .2px #ddd solid;
+        font-size: 12px;
+        border-radius: 5px;
+    }
+    .name{
+        align-content: flex-start;
+        position: relative;
+        left: 2px;
+        bottom: -30px;
+        font-size: 10px; 
+    }
+    input[type="submit"] {
+        padding: 5px 10px;
+        border: .2px #ddd solid;
+        font-size: 12px;
+        border-radius: 2px;
+        position: relative;
+        bottom: -10px;
+    }
+    .Message{
+        width: 120px;
+        height: 20px;
+        font-size: 10px;
+        position: relative;
+        top: -15px;
+    }
+    .email{
+        position: relative;
+        left: 5px;
+        top: 40px;
+        font-size: 10px;
+    }
+    .text-sub{
+        font-size: 10px;
+    }
+    .mess{
+        font-size: 10px;  
+    }
+    input[type="submit"] {
+        border: .2px #ddd solid;
+        font-size: 12px;
+        border-radius: 2px;
+    }
+    .contact{
+        width: 80px; 
+        position: absolute;
+        left: 20px;
+    }
+    .sub{
+        width: 120px;
+        height: 14px;
+        position: relative;
+        top: -15px;
+    }
+}
+@media(min-width: 200px) and (max-width:850px){
+    input[type="email"] {
+        position:relative ;
+        bottom: -45px;
+        width: 100%
+    }
+    input[type="text"]{
+        width: 100%
+    }
+    .email{
+        position:relative ;
+        top: 100px;
+        left: 20px;
+    }
+    .text-sub{
+        position:relative ;
+        bottom: -40px;
+    }
+    .sub{
+        position: relative;
+        top: 30px;
+        width: 350px;
+    }
+    .mess{
+        position:relative ;
+        bottom: -30px;
+    }
+    .Message{
+        position: relative;
+        top: 20px;
+        width: 350px;
+    }
+    .four-two-div2{
+        margin-left: 3%;
+    }
 }
