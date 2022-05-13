@@ -72,7 +72,8 @@ body{
     }
     input[type="text"] {
         background-color: white;
-        padding: 12px 50px;
+        width: 24vw;
+        height: 4vw;
         border: 1px #ddd solid;
         font-size: 18px;
         border-radius: 20px;
@@ -116,9 +117,9 @@ body{
             position: relative;
             bottom: -100px;
         }
-         .Message{
-           width: 555px;
-           height: 120px;
+         .message{
+           width: 50vw;
+           height: 12vw;
         }
         input[type="submit"] {
             background-color:  rgba(80, 202, 80, 0.833);
@@ -137,15 +138,15 @@ body{
         .contact:hover{
             background: black;
         }
-        .Message:focus{
+        .message:focus{
             outline: none;
         }
         input[type="submit"],input[type="email"],input[type="text"]:focus{
             outline: none;
         }
         .sub{
-            width: 555px;
-            height: 30px;
+            width: 50vw;
+            height: 12vw;
         }
     }
     @media(max-width: 200px) {
@@ -153,13 +154,15 @@ body{
         margin-left: 5px;
         }
         input[type="text"] {
-            padding: 2px 5px;
+            width: 24vw;
+            height: 4vw;
             border: .2px #ddd solid;
             font-size: 12px;
             border-radius: 5px;
         }
         input[type="email"] {
-            padding: 2px 5px;
+            width: 24vw;
+            height: 4vw;
              border: .2px #ddd solid;
              font-size: 12px;
              border-radius: 5px;
@@ -179,13 +182,6 @@ body{
             position: relative;
             bottom: -10px;
         }
-        .Message{
-            width: 120px;
-            height: 20px;
-            font-size: 10px;
-            position: relative;
-             top: -15px;
-         }
          .email{
              position: relative;
              left: 5px;
@@ -238,7 +234,7 @@ body{
             position:relative ;
              bottom: -30px;
          }
-         .Message{
+         .message{
             position: relative;
              top: 20px;
              width: 350px;
